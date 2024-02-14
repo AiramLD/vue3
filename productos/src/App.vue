@@ -1,10 +1,14 @@
 <script setup>
 import MyHeader from "./components/MyHeader.vue";
 import Usuarios from "./components/Usuarios.vue";
+import Productos from "./components/Productos.vue";
+import { ref } from "@vue/reactivity";
 </script>
 
 <template>
   <div id="app">
+    <product-list :products="products" @add-to-cart="addToCart"></product-list>
+    <cart :cart="cart"></cart>
     <router-view></router-view>
   </div>
 </template>

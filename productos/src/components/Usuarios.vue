@@ -10,8 +10,9 @@ let lista = ref(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]);
 
 <template>
   <div>
-    <MyHeader />
+    <li><router-link to="/">Inicio</router-link></li>
 
+    <MyHeader />  
     <form action="">
       <label for="username">Nombre de usuario</label>
       <input type="text" v-model="nombreUsuario" name="username" id="username" />
